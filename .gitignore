@@ -1,15 +1,50 @@
-*.iml
-.gradle
-/local.properties
-/keystore.properties
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Local SDK path. This file is machine-specific.
+local.properties
+
+# Signing secrets. keystore.properties.example stays in the repo.
 *.jks
 *.keystore
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
+keystore.properties
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+.navigation/
+
+# NDK / CMake
+obj/
+
+# Profiling
+*.hprof
+
+# OS files
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-app/release/
-**/build/
+Thumbs.db
+
+# Logs
+*.log

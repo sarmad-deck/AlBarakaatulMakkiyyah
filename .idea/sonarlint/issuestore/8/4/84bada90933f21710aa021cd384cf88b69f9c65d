@@ -1,7 +1,0 @@
-
-jsquid:UselessImportCheck"<Remove this unused import 'android.annotation.SuppressLint'.(ÕƒóÏûÿÿÿÿ8È¨áâà,
-csquid:UselessImportCheck"5Remove this unused import 'android.view.MotionEvent'.(˜šËÞúÿÿÿÿ8È¨áâà,
-Xsquid:UselessImportCheck"/Remove this unused import 'android.os.Handler'.(ûÛ’¡8È¨áâà,
-nsquid:UselessImportCheck"ERemove this unused import 'android.support.v4.content.ContextCompat'.(¹†Ç8È¨áâà,
-fsquid:UselessImportCheck"=Remove this unused import 'android.support.v7.app.ActionBar'.(¬­çô8È¨áâà,
-osquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(ÍÈßßüÿÿÿÿ8È¨áâà,
