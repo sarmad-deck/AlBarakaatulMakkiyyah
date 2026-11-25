@@ -48,7 +48,7 @@
         android:background="#ffffff"/>
 
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/dummy_button"
         android:layout_width="match_parent"
         android:layout_height="50dp"

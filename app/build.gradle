@@ -1,27 +1,60 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
+
+def keystorePropertiesFile = rootProject.file('keystore.properties')
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystorePropertiesFile.withInputStream { keystoreProperties.load(it) }
+}
 
 android {
-    compileSdkVersion 26
+    namespace = 'com.albarakaatulmakkiyyah.albarakaatulmakkiyyah'
+    compileSdk = 37
+
     defaultConfig {
-        applicationId "com.albarakaatulmakkiyyah.albarakaatulmakkiyyah"
-        minSdkVersion 16
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        applicationId = "com.albarakaatulmakkiyyah.albarakaatulmakkiyyah"
+        minSdk = 23
+        targetSdk = 37
+        versionCode = 6
+        versionName = "1.4"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        release {
+            if (keystorePropertiesFile.exists()) {
+                storeFile = rootProject.file(keystoreProperties['storeFile'] ?: 'playstoresigningkey.jks')
+                storePassword = keystoreProperties['storePassword']
+                keyAlias = keystoreProperties['keyAlias'] ?: 'junaidkeyid'
+                keyPassword = keystoreProperties['keyPassword']
+            }
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled = true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (keystorePropertiesFile.exists()) {
+                signingConfig = signingConfigs.release
+            }
         }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support:support-v4:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
-    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'androidx.appcompat:appcompat:1.8.0'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    implementation 'androidx.drawerlayout:drawerlayout:1.2.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test:runner:1.7.0'
 }

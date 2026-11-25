@@ -8,4 +8,35 @@ god blessed him ,he collected  more than 800 names of Rasul ALLAH Sallallahu Ala
 صلى الله عليه وسلم کے 800 سے زائد اسماء کو احادیث کی مستند کتابوں  سے انتہایی تحقیق کے بعد درود شریف کی شکل میں جمع فرمایا ہے</string>
     <string name="about">About</string>
     <string name="app_version">1.0.0</string>
+    <string name="nav_go_to">Go To</string>
+    <string name="nav_setting">Setting</string>
+    <string name="nav_save">Save</string>
+    <string name="nav_open_drawer">Open menu</string>
+    <string name="nav_close_drawer">Close menu</string>
+    <string name="go_to_title">Goto</string>
+    <string name="go_to_hint">Page number</string>
+    <string name="go_to_action">GO</string>
+    <string name="by_page">By Page</string>
+    <string name="by_manzil">By Manzil</string>
+    <string name="by_sulas">By Sulas</string>
+    <string name="all_in_one">All in One</string>
+    <string name="manzil_1">Manzil 1</string>
+    <string name="manzil_2">Manzil 2</string>
+    <string name="manzil_3">Manzil 3</string>
+    <string name="manzil_4">Manzil 4</string>
+    <string name="manzil_5">Manzil 5</string>
+    <string name="manzil_6">Manzil 6</string>
+    <string name="manzil_7">Manzil 7</string>
+    <string name="sulas_1">Sulas 1</string>
+    <string name="sulas_2">Sulas 2</string>
+    <string name="sulas_3">Sulas 3</string>
+    <string name="go_to_invalid">Enter a page between 1 and %1$d</string>
+    <string name="save_bookmark">Bookmark saved at page %1$d</string>
+    <string name="save_unnumbered_page">This front page has no page number</string>
+    <string name="show_portrait_only">Show in Portrait mode only</string>
+    <string name="show_landscape_only">Show in Landscape mode only</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="about_us">Remember the author and his family in your duaas.\n\nSpecial thanks to the contributors of this app who put great effort to spread this book to all Muslims by providing once click solution.\nIf you need further content then write us at this email (Ans14e@gmail.com)</string>
 </resources>
+
